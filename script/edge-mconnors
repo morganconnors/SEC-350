@@ -34,8 +34,6 @@ set nat source rule 20 translation address masquerade
 set service dns forwarding listen-address 172.16.150.2
 set service dns forwarding allow-from 172.16.150.0/24
 
-set system syslog host 172.16.50.5 facility authpriv level info
-
 set nat source rule 30 description "NAT from MGMT to WAN"
 set nat source rule 30 outbound-interface eth0
 set nat source rule 30 source address 172.16.200.0/28
