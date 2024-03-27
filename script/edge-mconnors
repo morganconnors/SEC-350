@@ -136,6 +136,8 @@ set nat destination rule 10 protocol tcp
 set nat destination rule 10 translation address 172.16.50.3
 set nat destination rule 10 translation port 80
 
+set system host-name edge01-mconnors
+
 commit
 save
 
