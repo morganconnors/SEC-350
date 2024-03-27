@@ -106,7 +106,7 @@ set zone-policy zone LAN from WAN firewall name WAN-to-LAN
 set zone-policy zone WAN from LAN firewall name LAN-to-WAN
 
 set firewall name LAN-to-DMZ rule 20 action accept
-set firewall name LAN-to-DMZ rule 20 description "Allow 80/tcp from LAN to Web01
+set firewall name LAN-to-DMZ rule 20 description "Allow 80/tcp from LAN to Web01"
 set firewall name LAN-to-DMZ rule 20 destination address 172.16.50.3
 set firewall name LAN-to-DMZ rule 20 destination port 80
 set firewall name LAN-to-DMZ rule 20 protocol tcp
